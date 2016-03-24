@@ -48,3 +48,6 @@ def whatisthis(s):
 # s = '<p>Source: <a rel="nofollow" target="_blank" href="http://www.jobs2careers.com/click.php?id=1834227799.96&amp;job_loc=Santa+Maria%2CCA">http://www.jobs2careers.com/click.php?id=1834227799.96&amp;job_loc=Santa+Maria%2CCA</a></p>'
 
 # print hasHTMLTag(s)
+
+
+# print hasNumbers('live')

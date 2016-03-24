@@ -33,14 +33,15 @@ def parse(title):
     tokens = []
 
     for content in title_contents:
-        tokens.extend([stem.stemming(word) for word in word_tokenize(content.lower()) if word not in stop and not str_helper.hasNumbers(word)])
+        tokens.extend([stem.stemming(word) for word in word_tokenize(content.lower()) if word not in stop])
 
     for token in tokens:
         if str_helper.hasSpecial(token) and not features[DTFTR_SPECIAL]:
             # ans.append(DTFTR_SPECIAL)
             features[DTFTR_SPECIAL] = True
-        if str_helper.hasNumbers(word) and not features[DTFTR_DIGIT]:
+        if str_helper.hasNumbers(token) and not features[DTFTR_DIGIT]:
             # ans.append(DTFTR_SPECIAL)
+            print token
             features[DTFTR_DIGIT] = True
         # else:
             """
