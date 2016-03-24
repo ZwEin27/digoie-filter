@@ -42,7 +42,7 @@ def doc_parser(path=None):
             docs.append(doc)
             # break   # test one doc this time
             test += 1
-            if test == 10:
+            if test == 50:
                 break
 
         except Exception as e: 
