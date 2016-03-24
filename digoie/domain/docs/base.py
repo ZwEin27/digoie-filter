@@ -20,13 +20,13 @@ def doc_parser(path=None):
     pn_file.close()
     hits = raw['hits']['hits']
     docs = []
-    test = 1
+    test = 0
     for hit in hits:
         try:
             source = hit[ES_DOC_SOURCE]
-
+            doc_url, doc_title, doc_body = None, None, None
             if ES_DOC_SOURCE not in hit:
-                # this contain nothing
+                # this hit contains nothing
                 continue
 
             if ES_DOC_URL in source:
@@ -38,18 +38,17 @@ def doc_parser(path=None):
             if ES_DOC_BODY in source:
                 doc_body = source[ES_DOC_BODY][ES_DOC_TEXT]
 
-
             doc = Doc(doc_url, doc_title, doc_body)
             docs.append(doc)
             # break   # test one doc this time
             test += 1
-            if test == 50:
+            if test == 10:
                 break
 
         except Exception as e: 
             print "ERROR: " + str(e)
-            # print hit
-            print 'hasBodyPart' in source
+            print hit
+            # print 'hasBodyPart' in source
 
     return docs
 

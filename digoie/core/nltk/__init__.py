@@ -1,0 +1,1 @@
+# http://www.slideshare.net/japerk/nltk-in-20-minutes

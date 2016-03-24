@@ -10,7 +10,6 @@ Steps
 4. based on these docs data from elastic search, apply one class classification 
 
 5. use the trained classifier to filter result of DIG
-
 """
 
 

@@ -1,6 +1,18 @@
 
+"""
+
+Features
+1. if title contain special
+2. if title contain number (usually phone number)
+
+"""
+
+
+
+
 from digoie.domain.docs.parser import doc_url
 from digoie.domain.docs.parser import doc_title
+from digoie.domain.docs.parser import doc_body
 
 class Doc(object):
 
@@ -9,7 +21,7 @@ class Doc(object):
     # BODY = None;
     
 
-    def __init__(self, url=None, title=None, body=None):
+    def __init__(self, url, title, body):
         self.url = url
         self.title = title
         self.body = body
@@ -21,6 +33,8 @@ class Doc(object):
         """
         # doc_url.parse(self.url)
         doc_title.parse(self.title)
+        # if self.body:
+        #     words, tags = doc_body.parse(self.body)
 
     def parse_title(self, title):
         pass
