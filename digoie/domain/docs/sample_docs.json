@@ -1,0 +1,45 @@
+{
+  "took": 49009,
+  "timed_out": false,
+  "_shards": {
+    "total": 40,
+    "successful": 40,
+    "failed": 0
+  },
+  "hits": {
+    "total": 3417517,
+    "max_score": 1.5341588,
+    "hits": [
+      {
+        "_index": "dig-ht-pilot-unfiltered04",
+        "_type": "WebPage",
+        "_id": "http://dig.isi.edu/ht/data/page/ADD689CCEF94A0C3FDBEFE6991B9263B07664B34/1436251227000/processed",
+        "_score": 1.5341588,
+        "_source": {
+          "hasBodyPart": {
+            "text": "LocumTenens.com is looking for a Gastroenterologist in California, not far from San Francisco. ERCP is required. One week per month up to fulltime. LocumTenens.com will cover your malpractice, travel, and lodging.\n\n\n\t\t\t\t\t<p>Source: <a rel=\"nofollow\" target=\"_blank\" href=\"http://www.jobs2careers.com/click.php?id=1834227799.96&amp;job_loc=Santa+Maria%2CCA\">http://www.jobs2careers.com/click.php?id=1834227799.96&amp;job_loc=Santa+Maria%2CCA</a></p>"
+          },
+          "hasTitlePart": {
+            "text": "Gastroenterologist (Santa Maria) - LocumTenens.com (Santa Maria, CA) - Santa Maria miscellaneous jobs - backpage.com"
+          },
+          "url": "http://santamaria.backpage.com/MiscJobs/gastroenterologist-santa-maria-locumtenenscom-santa-maria-ca/4508970"
+        }
+      },
+      {
+        "_index": "dig-ht-pilot-unfiltered04",
+        "_type": "WebPage",
+        "_id": "http://dig.isi.edu/ht/data/page/5A9B5E53E5CB65EDB06B0FA92D5BB2939F83EDAF/1406078217000/processed",
+        "_score": 0.48998278,
+        "_source": {
+          "hasBodyPart": {
+            "text": "HOT SOCCER MOM Sexy Beautiful Skin 415 525 1829 - 37"
+          },
+          "hasTitlePart": {
+            "text": "Live Escort Reviews - 415-525-1829 - HOT SOCCER MOM Sexy Beautiful Skin 415 525 1829 - 37"
+          },
+          "url": "http://liveescortreviews.com/ad/sf/415-525-1829/25/36601"
+        }
+      }
+    ]
+  }
+}
