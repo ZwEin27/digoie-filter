@@ -17,7 +17,8 @@ TITLE_FEATURES =    [
 
 
 def parse(title):
-    # print title
+    print '\n\n\n'
+    print title
     # print word_tokenize(title)
     
     ans = []
