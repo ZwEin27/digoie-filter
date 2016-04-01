@@ -1,4 +1,3 @@
-
 from nltk.tokenize import word_tokenize
 from digoie.core.nltk import stopword
 from digoie.core.nltk import stem
